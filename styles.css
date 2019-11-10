@@ -166,4 +166,145 @@ header{
 
 .reportBot{
     padding-left: 250px;
+/*Basic format for all pages*/
+body{
+    background-color: rgb(206, 199, 199);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgb(151, 38, 38);
+    font-family: Roboto;
+    color: rgba(255, 255, 255, 0.788);
+}
+.copyright{
+    color: #22212194;
+    text-align: center;
+    align-items: flex-end;
+}
+.navList{
+    font-family: Roboto;
+    font-size: 150%;
+    list-style: none;
+    text-align: center;
+    margin-right: 50px;
+}
+.navList li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Homepage Styling*/
+.hompage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.homePageContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.homePageHeader{
+    font-family: Roboto;
+    text-align: center;
+}
+.homeListObjects{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#imageOne{
+    height: 300px;
+    width: 400px;
+    border: solid;
+    border-width: 5px;
+}
+#imageTwo{
+    height: 300px;
+    width: 400px;
+    border: solid;
+    border-width: 5px;
+}
+
+/*About Styling*/
+.about{
+    font-family: Roboto;
+}
+.purposeHeader{
+    padding-left: 225px;
+}
+
+.purpose{
+    padding-left: 225px;
+}
+
+.faqheader{
+    padding-left: 10px;
+}
+
+.question{
+    margin-top: -15px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.answer{
+    margin-top: -15px;
+    padding-left:10px;
+    padding-bottom: 15px;
+}
+
+.imageThree{
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    left: 200px;
+    top:780px;
+    border: solid;
+}
+
+.imageFour{
+    position: absolute;
+    top: 780px;
+    right: 220px;
+    height: 25%;
+    width: 25%;
+    border:solid;
+}
+
+.tagline-one{
+    position: absolute;
+    top: 720px;
+    left: 280px;
+}
+.tagline-two{
+    position: absolute;
+    top: 720px;
+    right:310px;
+}
+
+.review{
+    font-family: Roboto;
+}
+
+.report{
+    font-family: Roboto;
+}
+.reportHeader{
+    padding-left:225px;
+}
+
+.reportClick{
+    padding-left:475px;
+}
+
+.reportBot{
+    padding-left: 250px;
 }
