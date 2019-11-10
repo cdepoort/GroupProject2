@@ -116,3 +116,28 @@ header{
     flex-direction: column;
     text-align: center;
 }
+@media (min-width: 999px){
+/*Basic Styling*/
+
+/*Homepage*/
+
+}
+@media (max-width:998px) and (min-width:400px){
+/*Basic Styling*/
+
+/*Homepage*/
+    header{
+        color:black;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width:399px){
+/*Basic Styling*/
+.navList li{
+    display: list-item;
+}
+/*Homepage*/
+
+
+}
