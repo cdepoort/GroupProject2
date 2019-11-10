@@ -69,63 +69,47 @@ header{
 .about{
     font-family: Roboto;
 }
-.purposeHeader{
-    padding-left: 225px;
+.aboutpage{
+    display:flex;
+    flex-direction: column;
 }
-
-.purpose{
-    padding-left: 225px;
+.aboutPics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
-
-.faqheader{
-    padding-left: 10px;
+.beforePic{
+    flex-direction: column;
 }
-
+.afterPic{
+    flex-direction: row;
+}
 .question{
     margin-top: -15px;
     padding-left: 10px;
     font-style: italic;
 }
-
 .answer{
     margin-top: -15px;
     padding-left:10px;
     padding-bottom: 15px;
 }
-
 .imageThree{
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    left: 200px;
-    top:780px;
+    height: 300px;
+    width: 400px;
     border: solid;
 }
-
 .imageFour{
-    position: absolute;
-    top: 780px;
-    right: 220px;
-    height: 25%;
-    width: 25%;
+    height: 300px;
+    width: 400px;
     border:solid;
 }
-
-.tagline-one{
-    position: absolute;
-    top: 720px;
-    left: 280px;
-}
-.tagline-two{
-    position: absolute;
-    top: 720px;
-    right:310px;
-}
-
 .review{
     font-family: Roboto;
 }
 
+/*Report Styling*/
 .report{
     font-family: Roboto;
 }
