@@ -6,10 +6,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align:center;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    justify-content: center;
     background-color: rgb(151, 38, 38);
     font-family: Roboto;
     color: rgba(255, 255, 255, 0.788);
@@ -17,19 +14,19 @@ header{
 .copyright{
     color: #22212194;
     text-align: center;
-    align-items: flex-end;
 }
 .navList{
     font-family: Roboto;
     font-size: 150%;
     list-style: none;
     text-align: center;
-    margin-right: 50px;
+    margin-left: 0px;
 }
 .navList li{
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 /*Homepage Styling*/
@@ -79,12 +76,7 @@ header{
     justify-content: space-around;
     text-align: center;
 }
-.beforePic{
-    flex-direction: column;
-}
-.afterPic{
-    flex-direction: row;
-}
+
 .question{
     margin-top: -15px;
     padding-left: 10px;
@@ -95,12 +87,12 @@ header{
     padding-left:10px;
     padding-bottom: 15px;
 }
-.imageThree{
+#imageThree{
     height: 300px;
     width: 400px;
     border: solid;
 }
-.imageFour{
+#imageFour{
     height: 300px;
     width: 400px;
     border:solid;
@@ -116,28 +108,136 @@ header{
     flex-direction: column;
     text-align: center;
 }
-@media (min-width: 999px){
-/*Basic Styling*/
-
-/*Homepage*/
-
+/*Laundry Styling*/
+.dorms{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+#Jonas{
+    color: black;
+}
+#CPH{
+    color: red;
+}
+#Humphrey{
+    color: green;
+}
+#Davis{
+    color: yellow;
+}
+#River{
+    color: blue;
+}
+.washingMachines{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
 @media (max-width:998px) and (min-width:400px){
 /*Basic Styling*/
-
-/*Homepage*/
-    header{
-        color:black;
-        flex-wrap: wrap;
+    .navList li{
+        display: list-item;
     }
 
+/*Homepage*/
+   .homePageContent{
+        justify-content: space-around;
+        flex-direction: row;
+   }
+   #imageOne{
+        width: 40%;
+        height: 30%;
+   }
+   #imageTwo{
+        width: 40%;
+        height: 30%;
+   }
+/*About*/
+   #imageThree{
+        width: 120%;
+        height: 80%;
+   }
+   #imageFour{
+        width: 60%;
+        height: 80%;
+   }
+   .beforePic h3{
+        font-size: 80%;
+    }
+    .afterPic h3{
+        font-size: 80%;
+    }
 }
 @media (max-width:399px){
 /*Basic Styling*/
-.navList li{
-    display: list-item;
-}
+    .navList{
+        padding: 0px;
+    }
+    .navList li{
+        display: list-item;
+        text-align: left;
+    }
+    header{
+        text-align: left;
+        padding-left: 10px;
+    }
+
 /*Homepage*/
+    .homePageContent{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #imageOne{
+        width: 80%;
+        height: 40%;
+    }
+    #imageTwo{
+        width: 80%;
+        height: 40%;
+    }
 
+/*About*/
+    #imageThree{
+        width: 80%;
+    }
+    #imageFour{
+        width: 80%;
+    }
+    .aboutPics{
+        flex-direction: column;
+    }
 
+/*Laundry*/
+    .dorms{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .room{
+        display: flex;
+        flex-direction: row;
+    }
+    .room hr{
+        display: none;
+    }
+    .washingMachines{
+        flex-direction: column;
+        width: 50%;
+    }
+    .time{
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        width: 50%;
+    }
 }
