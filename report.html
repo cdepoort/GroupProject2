@@ -24,8 +24,30 @@
         </header>   
         <div class = "report">
             <h2>Have a Question, Comment, or Concern? Let us know!</h2>
-            <a href = "mailto:laundryaidstevens@gmail.com">Click here!</a>
+            <a href = "mailto:laundryaidstevens@gmail.com">Click here!</a><br>
             <a> We'll get back to you (or just help with your problem) as soon as possible!</a>
+        </div><br>
+        <div class = "form">
+            <a>...Or, alternatively: Fill out a report form directly on our website:</a><br><br>
+            <form id = "input">
+                <a>First Name:</a> <input type = "text" name = "fName" id = "firstName" placeholder = "Enter here..." required/> <br><br>
+                <a>Last Name:</a> <input type = "text" name = "lName" id = "lastName" placeholder = "Enter here..." required/> <br><br>
+                <a>Student E-mail:</a> <input type = "text" name = "mail" id = "email" placeholder = "Enter here..." required/> <br><br>
+                <a>Dorm / Hall:</a> <select name = "dorms">
+                    <option>Castle Point</option>
+                    <option>Davis</option>
+                    <option>Humphrey's</option>
+                    <option>Jonas</option>
+                    <option>River Terrace</option>
+                </select><br><br>
+                <a>Please select all that apply to your report:</a><br>
+                <input type = "radio" name = "type" value = "1">The website is broken!<br>
+                <input type = "radio" name = "type" value = "2">One of the machines is mislabelled  <input type = "text" name ="machineMislabel" id="misLabelMachine" placeholder="Which machine?"/><br>
+                <input type = "radio" name = "type" value = "3">A machine is out of order  <input type = "text" name ="machineOrder" id="OOOMachine" placeholder="Which machine?"/><br>
+                <input type = "radio" name = "type" value = "4">I just like filling out forms<br><br>
+                <a>Something more specific? Please tell us:</a><input type = "text" name = "specifictype" id = "specType" placeholder = "Enter Here..."/><br><br>
+                <button onclick = "submitButton()">Submit Report</button>
+            </form>
         </div>
         <div class = "copyright">
                 <hr>
@@ -33,5 +55,6 @@
                 <br> Made by Jack Schneiderhan, Christian de Poortere, Max Surets, and Michael Karsen
                 <br> Thank you for using our website!</p>
         </div>
+        <script type="text/javascript" src="./functions.js"></script>
     </body>
 </html>
