@@ -20,13 +20,24 @@ header{
     font-size: 150%;
     list-style: none;
     text-align: center;
-    margin-left: 0px;
 }
 .navList li{
     display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
+}
     
+.navButton{
+    border:none;
+    color: rgb(59, 58, 58);
+    background-color: lightgray;
+    padding: 10px 32px;
+    text-align:center;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+
+.navButton:hover{
+    background-color: rgb(59,58,58);
+    color:lightgray;
 }
 
 /*Homepage Styling*/
@@ -104,50 +115,121 @@ header{
 /*Report Styling*/
 .report{
     font-family: Roboto;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-}
-/*Laundry Styling*/
-.dorms{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: Roboto;
-}
-#Jonas{
-    color: black;
-}
-#CPH{
-    color: red;
-}
-#Humphrey{
-    color: green;
-}
-#Davis{
-    color: yellow;
-}
-#River{
-    color: blue;
-}
-.washingMachines{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-}
-.time{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
 }
 
+.formBody{
+    font-family:Roboto;
+    display: inline-block;
+    text-align: left;
+}
+
+.subBut{
+    position: absolute;
+    left: 580px;
+    top: 715px;
+}
+
+/*Laundry Styling*/
+.dorms{
+    font-family: Roboto;
+    text-align: center;
+}
+
+.dormList{
+    list-style: none;
+}
+
+.ldButtonCP{
+    border: 2px solid green;
+    background-color: lightgray;
+    color: green;
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonCP:hover{
+    background-color: green;
+    color: white;
+}
+.ldButtonD{
+    border: 2px solid rgb(8, 8, 94);
+    background-color: lightgray;
+    color:rgb(8, 8, 94);
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonD:hover{
+    background-color: rgb(8,8,94);
+    color:white;
+}
+.ldButtonH{
+    border: 2px solid rgb(116, 11, 11);
+    background-color: lightgray;
+    color: rgb(116, 11, 11);
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonH:hover{
+    background-color: rgb(116, 11, 11);
+    color:white;
+}
+.ldButtonJ{
+    border: 2px solid rgb(87, 8, 87);
+    background-color: lightgray;
+    color: rgb(87, 8, 87);
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonJ:hover{
+    background-color:rgb(87, 8, 87);
+    color:white;
+}
+.ldButtonRT{
+    border: 2px solid rgb(199, 136, 9);
+    color: rgb(95, 64, 6);
+    background-color: lightgray;
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonRT:hover{
+    background-color:rgb(199, 136, 9);
+    color:white;
+}
 @media (max-width:998px) and (min-width:400px){
 /*Basic Styling*/
-    .navList li{
-        display: list-item;
-    }
+.navList li{
+    display: list-item;
+}
 
 /*Homepage*/
    .homePageContent{
@@ -241,4 +323,6 @@ header{
         justify-content: space-around;
         width: 50%;
     }
+
+
 }
