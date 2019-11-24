@@ -140,6 +140,18 @@ header{
     list-style: none;
 }
 
+#laundryHead{
+    font-family: Roboto;
+    text-align: center;
+}
+.laundry{
+    text-align: center;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .ldButtonCP{
     border: 2px solid green;
     background-color: lightgray;
@@ -225,6 +237,19 @@ header{
     background-color:rgb(199, 136, 9);
     color:white;
 }
+
+/*Laundry Page Styling*/
+#machine{
+    width:50%;
+    height:50%;
+}
+
+.laundry figure{
+    margin:auto;
+    text-align:center;
+    width:230px;
+}
+
 @media (max-width:998px) and (min-width:400px){
 /*Basic Styling*/
 .navList li{
