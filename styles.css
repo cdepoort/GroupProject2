@@ -238,6 +238,24 @@ header{
     color:white;
 }
 
+.ldButtonP{
+    border: 2px solid rgb(10, 189, 180);
+    color: rgb(28, 144, 148);
+    background-color: lightgray;
+    padding: 15px 32px;
+    display: inline-block;
+    text-align:center;
+    width: 10em;
+    border-radius: 12px;
+    margin: 2px;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.ldButtonP:hover{
+    background-color:rgb(10, 189, 180);
+    color:white;
+}
+
 /*Laundry Page Styling*/
 #machine{
     width:50%;
@@ -254,6 +272,7 @@ header{
 /*Basic Styling*/
 .navList li{
     display: list-item;
+    padding: 15px;
 }
 
 /*Homepage*/
@@ -284,6 +303,13 @@ header{
     .afterPic h3{
         font-size: 80%;
     }
+    
+    .subBut{
+    position: absolute;
+    left: 300px;
+    top: 920px;
+}
+    
 }
 @media (max-width:399px){
 /*Basic Styling*/
