@@ -123,13 +123,10 @@ header{
     display: inline-block;
     text-align: left;
 }
-
-.subBut{
-    position: absolute;
-    left: 580px;
-    top: 715px;
+#input{
+    display: flex;
+    justify-content: center;
 }
-
 /*Laundry Styling*/
 .dorms{
     font-family: Roboto;
@@ -272,7 +269,7 @@ header{
 /*Basic Styling*/
 .navList li{
     display: list-item;
-    padding: 15px;
+    padding: 10px;
 }
 
 /*Homepage*/
@@ -303,13 +300,6 @@ header{
     .afterPic h3{
         font-size: 80%;
     }
-    
-    .subBut{
-    position: absolute;
-    left: 300px;
-    top: 920px;
-}
-    
 }
 @media (max-width:399px){
 /*Basic Styling*/
@@ -319,6 +309,7 @@ header{
     .navList li{
         display: list-item;
         text-align: left;
+        padding: 10px;
     }
     header{
         text-align: left;

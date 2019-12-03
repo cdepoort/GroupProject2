@@ -1,5 +1,28 @@
 function submitButton(){
-    alert("Report submitted! We will get back to you ASAP.")
+  document.getElementsByClassName("subBut")[0].addEventListener("click", function(event){
+    event.preventDefault()
+  });
+  validateForm();
+}
+
+function validateForm(){
+  var fName = document.getElementById("firstName").value;
+  var lName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  if(fName == "" || lName == "" || email == ""){
+    alert("Missing Fields!")
+  }else{
+    changePage(fName);
+  }
+}
+
+function changePage(fName){
+  var div = document.getElementById("reportBody");
+  div.innerHTML = "";
+  var p = document.createElement('p');
+  p.innerText = "Thank you for your feedback " + fName + "!";
+  p.style.fontSize = "250%"
+  div.appendChild(p);
 }
 
 function startTimerWasher(num){

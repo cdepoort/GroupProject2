@@ -22,13 +22,13 @@
                 </ul>
             </nav>
         </header>   
-        <div class = "report">
+        <div class = "report" id = "reportBody">
             <h2>Have a Question, Comment, or Concern? Let us know!</h2>
             <a href = "mailto:laundryaidstevens@gmail.com">Click here!</a><br><br>
             <a> We'll get back to you (or just help with your problem) as soon as possible!</a><br><br>
             <div class = "form">
                 <a>...Or, alternatively: Fill out a report form directly on our website:</a><br><br>
-                <form id = "input">
+                <form id = "input" name = "reportForm">
                     <div class = "formBody">
                         <a>First Name:</a> <input type = "text" name = "fName" id = "firstName" placeholder = "Enter here..." required/> <br><br>
                         <a>Last Name:</a> <input type = "text" name = "lName" id = "lastName" placeholder = "Enter here..." required/> <br><br>
@@ -46,8 +46,8 @@
                         <input type = "checkbox" name = "type" value = "3">A machine is out of order  <input type = "text" name ="machineOrder" id="OOOMachine" placeholder="Which machine?"/><br>
                         <input type = "checkbox" name = "type" value = "4">I just like filling out forms<br><br>
                         <a>Something more specific? Please tell us:</a><input type = "text" name = "specifictype" id = "specType" placeholder = "Enter Here..."/><br><br>
+                        <a class = "subBut"><button onclick = "submitButton()">Submit Report</button><a><br><br>
                     </div>
-                    <a class = "subBut"><button onclick = "submitButton()">Submit Report</button><a><br><br>
                 </form>
             </div>
         </div>
