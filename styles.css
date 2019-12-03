@@ -72,7 +72,6 @@ header{
     border: solid;
     border-width: 5px;
 }
-
 /*About Styling*/
 .about{
     font-family: Roboto;
@@ -137,7 +136,7 @@ header{
     list-style: none;
 }
 
-#laundryHead{
+.laundryHead{
     font-family: Roboto;
     text-align: center;
 }
@@ -254,7 +253,7 @@ header{
 }
 
 /*Laundry Page Styling*/
-#machine{
+.machine{
     width:50%;
     height:50%;
 }
@@ -365,6 +364,4 @@ header{
         justify-content: space-around;
         width: 50%;
     }
-
-
 }

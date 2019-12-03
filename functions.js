@@ -10,7 +10,7 @@ function validateForm(){
   var lName = document.getElementById("lastName").value;
   var email = document.getElementById("email").value;
   if(fName == "" || lName == "" || email == ""){
-    alert("Missing Fields!")
+    alert("Missing Required Fields!")
   }else{
     changePage(fName);
   }
